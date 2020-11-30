@@ -17,6 +17,7 @@ class CreateAgentsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->string('first_name');
+            $table->string('roles');
             $table->string('last_name');
             $table->integer('phone_number');
             $table->string('gps_address');
@@ -24,6 +25,7 @@ class CreateAgentsTable extends Migration
             $table->string('city');
             $table->string('region');
             $table->string('country');
+
             $table->boolean('is_verified')->default(false);
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

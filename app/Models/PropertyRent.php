@@ -62,13 +62,26 @@ class PropertyRent extends Model  implements HasMedia {
     public function detail(){
         return $this->hasOne('App\Models\PropertyDetail');
     }
+
+    public function bookApointment(){
+        return $this->hasOne('App\Models\BookApointment');
+    }
+
     public function registerMediaConversions(Media $media = null):void
     {
 
-       
+        $this->addMediaConversion('thumb')
+            ->width(180)
+            ->height(180)
+            ->watermark(public_path('assets/img/efieonline.png'))
+            ->watermarkOpacity(50)
+            ->sharpen(10)
+            ->performOnCollections('images','gallery')
+            ->nonQueued();
 
         $this->addMediaConversion('large')
-            ->width(1024)
+            ->width(1000)
+            ->height(400)
             ->watermark(public_path('assets/img/efieonline.png'))
             ->watermarkOpacity(50)
             ->sharpen(10)
@@ -77,9 +90,8 @@ class PropertyRent extends Model  implements HasMedia {
             ->nonQueued();
 
         $this->addMediaConversion('large')
-            ->width(1024)
-            ->watermark(public_path('assets/img/efieonline.png'))
-            ->watermarkOpacity(50)
+             ->width(180)
+             ->height(180)
             ->sharpen(10)
             ->watermarkPosition(Manipulations::POSITION_CENTER)
             ->performOnCollections('images','main_photo')

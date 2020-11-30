@@ -54,6 +54,9 @@ class PropertySale extends Model implements HasMedia
     public function detail(){
         return $this->hasOne('App\Models\PropertyDetail');
     }
+    public function bookApointment(){
+        return $this->hasOne('App\Models\BookApointment');
+    }
 
 
     public function registerMediaConversions(Media $media = null):void

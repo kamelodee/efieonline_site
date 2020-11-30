@@ -29,7 +29,36 @@ class HomeController extends Controller
         // dd($propertyRent,$propertySale);
         return view('welcome',compact('rents','sales'));
     }
+    public function rent()
+    {
+        $rents = PropertyRent::with('location','detail','feature')->latest()->take(10)->get();
+       
+        return view('rent',compact('rents'));
+    }
+    public function sale()
+    {
+        
+        $sales = PropertySale::with('location','detail','feature')->latest()->take(10)->get();
+        // dd($propertyRent,$propertySale);
+        return view('sale',compact('sales'));
+    }
 
+
+// sow rent
+    public function show_rent(propertyrent $propertyrent)
+    {
+        $rents = PropertyRent::with('location','detail','feature')->latest()->take(4)->get();
+        $rent = PropertyRent::with('location','detail','feature')->where('id',$propertyrent->id)->get();
+        return view('singleProperty', compact('rent','rents'));
+    }
+// show sales
+
+public function show_sale(propertysale $propertysale)
+{
+    $sales = PropertySale::with('location','detail','feature')->latest()->take(4)->get();
+    $sale = PropertySale::with('location','detail','feature')->where('id',$propertysale->id)->get();
+    return view('singleSale', compact('sale','sales'));
+}
     public function search(Request $request)
     {
         $rents = PropertyRent::where(

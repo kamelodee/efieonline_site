@@ -166,11 +166,11 @@
 </div>
         </div>
         <div class="col-4 row-no-padding">
-            <div class="banner" id="banner">
+            <div class="banner_" id="banner">
                 <div id="bannerCarousole" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item banner-max-height active">
-                            <img class="d-block w-100" height="400" src="assets/img/banner/banner-1.jpg" alt="banner">
+                            <img class="d-block w-100" height="400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqIQij7VwIogkOlnEBoKAEDre0bIgIiAV7RA&usqp=CAU" alt="banner">
                             <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
                                 <div class="carousel-content container">
                                     <div class="text-center">
@@ -180,7 +180,7 @@
                             </div>
                         </div>
                         <div class="carousel-item banner-max-height">
-                            <img class="d-block w-100" height="400" src="assets/img/banner/banner-2.jpg" alt="banner">
+                            <img class="d-block w-100" height="400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkUBTvB2WBHWxtLEkhciOXxew9SBHqnX_1rQ&usqp=CAU" alt="banner">
                             <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
                                 <div class="carousel-content container">
                                     <div class="text-center">
@@ -190,7 +190,7 @@
                             </div>
                         </div>
                         <div class="carousel-item banner-max-height">
-                            <img class="d-block w-100" height="400" src="assets/img/banner/banner-3.jpg" alt="banner">
+                            <img class="d-block w-100" height="400" src="https://www.irea-aii.com/wp-content/uploads/single-service.jpg" alt="banner">
                             <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
                                 <div class="carousel-content container">
                                     <div class="text-center">
@@ -444,7 +444,7 @@
                             </strong>
                             <div class="location">
                                 <a href="{{ route('sale.show',$propertysale->id) }}">
-                                    <i class="fa fa-map-marker"></i>{{$propertyrent->location->address}}  {{$propertyrent->location->city}}  {{$propertyrent->location->region}}  {{$propertyrent->location->country}}
+                                    <i class="fa fa-map-marker"></i>{{$propertysale->location->address}}  {{$propertysale->location->city}}  {{$propertysale->location->region}}  {{$propertysale->location->country}}
                                 </a>
                             </div>
                             <ul class="facilities-list clearfix">
@@ -533,6 +533,7 @@
                 <div class="slick-slide-item">
                     <div class="property-box-5">
                         <div class="property-photo">
+                            
                             <img class="img-fluid" src="{{$propertyrent->getFirstMediaUrl('main_photo','large')}}" alt="properties">
                         <div class="date-box">{{$propertyrent->property_type}}</div>
                         </div>
@@ -562,6 +563,7 @@
                 <div class="slick-slide-item">
                     <div class="property-box-5">
                         <div class="property-photo">
+                           
                             <img class="img-fluid" src="{{$propertysale->getFirstMediaUrl('main_photo','large')}}" alt="properties">
                         <div class="date-box">{{$propertysale->property_type}}</div>
                         </div>

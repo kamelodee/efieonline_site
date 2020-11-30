@@ -4,23 +4,19 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
-use Brackets\Media\HasMedia\ProcessMediaTrait;
-use Brackets\Media\HasMedia\AutoProcessMediaTrait;
-use Brackets\Media\HasMedia\HasMediaCollectionsTrait;
 use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 use Spatie\Image\Manipulations ;
 class Agent extends Model implements HasMedia
 {
-    use ProcessMediaTrait;
-    use AutoProcessMediaTrait;
-    use HasMediaCollectionsTrait;
+    use InteractsWithMedia;
     use HasFactory;
     
 
     protected $fillable = [
         'user_id',
+        'roles',
         'first_name',
         'last_name',
         'phone_number',

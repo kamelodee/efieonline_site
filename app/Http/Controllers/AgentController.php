@@ -46,6 +46,7 @@ class AgentController extends Controller
         
         $agent =  Agent::create([
             'user_id'=> Auth::id(),
+            'roles'=>'agent',
             'first_name'=>$first_name,
             'last_name'=>$last_name,
             'phone_number'=>$phone_number,

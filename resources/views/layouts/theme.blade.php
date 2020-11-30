@@ -55,8 +55,8 @@
 <div class="sub_item"><small><i class="fa fa-home"></i>House</small></div>
 <div class="sub_item"><small><i class="fa fa-building"></i>Offices</small></div>
 <div class="sub_item"><small><i class="fa fa-home"></i> Stores</small></div>
-<div class="sub_item"><small>Rents</small></div>
-<div class="sub_item"><small>Sales</small></div>
+<div class="sub_item"><a href="{{route('rents')}}"><small>Rents</small></a></div>
+<div class="sub_item"><a href="{{route('sales')}}"><small>Sales</small></a></div>
 </div>
 
 
@@ -75,17 +75,16 @@
                     <div class="m-border"></div>
                     <ul class="contact-info">
                         <li>
-                            Address: 20/F Green Road, Dhanmondi, Dhaka
+                            Kwabenya
+                            Ghana 
                         </li>
                         <li>
-                            Email: <a href="mailto:sales@hotelempire.com">info@themevessel.com</a>
+                            Email: <a href="mailto:sales@hotelempire.com">support@efieonline.com </a>
                         </li>
                         <li>
-                            Phone: <a href="tel:+55-417-634-7071">+0477 85X6 552</a>
+                            Phone: <a href="tel:+55-417-634-7071">(+233) 0242 38 8852</a>
                         </li>
-                        <li>
-                            Fax: +0477 85X6 552
-                        </li>
+                        
                     </ul>
                     <ul class="social-list clearfix">
                         <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
@@ -131,40 +130,12 @@
                     <h4>Popular Posts</h4>
                     <div class="s-border"></div>
                     <div class="m-border"></div>
+
+
                     <div class="popular-posts">
-                        <div class="media">
-                            <div class="media-left">
-                                <img class="media-object" src="img/sub-properties/sub-properties-3.jpg" alt="sub-properties">
-                            </div>
-                            <div class="media-body align-self-center">
-                                <h3 class="media-heading">
-                                    <a href="#">Real Eatate Expo 2019</a>
-                                </h3>
-                                <p>Feb 27, 2019 | $1045,000</p>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-left">
-                                <img class="media-object" src="img/sub-properties/sub-properties-2.jpg" alt="sub-properties">
-                            </div>
-                            <div class="media-body align-self-center">
-                                <h3 class="media-heading">
-                                    <a href="#">Big Head House</a>
-                                </h3>
-                                <p>Apr 15, 2019 | $2041,000</p>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-left">
-                                <img class="media-object" src="img/sub-properties/sub-properties-1.jpg" alt="sub-properties">
-                            </div>
-                            <div class="media-body align-self-center">
-                                <h3 class="media-heading">
-                                    <a href="#">Villa in Coral Gables</a>
-                                </h3>
-                                <p>Apr 21, 2019 | $545,000</p>
-                            </div>
-                        </div>
+                       
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -174,7 +145,7 @@
                     <div class="s-border"></div>
                     <div class="m-border"></div>
                     <div class="Subscribe-box">
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+                        <p>Efie online is a classified website focusing exclusively on estate properties, apartments, and rooms for purchase and rental purposes.</p>
                         <form action="#" method="GET">
                             <p>
                                 <input type="text" class="form-contact" name="email" placeholder="Enter Address">
@@ -191,7 +162,7 @@
         </div>
         <div class="row">
             <div class="col-xl-12">
-                <p class="copy">© 2020 <a href="#">Theme Vessel.</a> Trademarks and brands are the property of their respective owners.</p>
+                <p class="copy">© 2020 <a href="#">Efie Online</a> </p>
             </div>
         </div>
     </div>
@@ -199,7 +170,7 @@
 <!-- Full Page Search -->
 <div id="full-page-search">
     <button type="button" class="close">×</button>
-    <form action="http://theme-vessel-templates.theme-vessel.ey.r.appspot.com/housy/index.html#">
+    <form action="/">
         <input type="search" value="" placeholder="type keyword(s) here" />
         <button type="submit" class="btn btn-sm button-theme">Search</button>
     </form>

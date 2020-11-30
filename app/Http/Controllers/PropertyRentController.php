@@ -189,12 +189,6 @@ if($location){
 
 
 
-    public function show(propertyrent $propertyrent)
-    {
-        $rents = PropertyRent::with('location','detail','feature')->latest()->take(4)->get();
-        $rent = PropertyRent::with('location','detail','feature')->where('id',$propertyrent->id)->get();
-        return view('singleProperty', compact('rent','rents'));
-    }
 
     public function edit(Property_rent $property_rent)
     {

@@ -115,7 +115,7 @@
                             <a class="carousel-control right" href="#propertiesDetailsSlider" data-slide="next"><i class="fa fa-angle-right"></i></a>
                         </div>
                         <!-- main slider carousel nav controls -->
-
+                        <a class="btn btn-primary" href="{{route('sale.apointment',$s->id)}}">Book apointment</a>
                         <div class="slick-slider-area">
                             <div class="row slick-carousel" data-slick='{"slidesToShow": 5, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 3}}, {"breakpoint": 768,"settings":{"slidesToShow": 2}}]}'>
                                 @foreach ($s->getMedia('gallery') as $galleryItem)
@@ -129,6 +129,8 @@
             <div class="slick-next slick-arrow-buton">
                 <i class="fa fa-angle-right"></i>
             </div>
+
+       
                         <!-- main slider carousel items -->
                     </div>
                     </div>
